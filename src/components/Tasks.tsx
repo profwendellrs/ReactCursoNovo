@@ -1,7 +1,12 @@
-export function Tasks() {
+
+
+export function Tasks(props) {
+   
     return (
     <div>
-    <h1>Tasks</h1>
+        <p>{props.tasks.map((task) => (
+            <p>{task.title}</p>
+        ))}</p>
     </div>
     )
 }
